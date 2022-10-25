@@ -1,0 +1,208 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    background: url(background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+    color:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: black;
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    font-size: 25px;
+    color:white;
+    text-align: center;
+    line-height: 50px;
+    background: black;
+    user-select: none;
+    margin: 25px;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 18px;
+    color: white;
+    box-sizing: border-box;
+    transition: .3s;
+    text-align: center;   
+}
+
+ul li:hover a{
+    padding-left: 40px;
+    background: #262727;
+ 
+}
+
+a.active,a.hover{
+    background: #262727;
+    transition: .5s;
+   
+    
+}
+
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background-color: #042331;
+    ;
+
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 200px;
+}
+
+#check:checked ~ section{
+    margin-left: 250px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+  
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+  
+/* Top left text */
+.top-left {
+    position: relative;
+    top: 50px;
+    margin-left: 150px;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+  
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+
+}
+  
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 80px;
+    right: 100px;
+    color: #ffffff;
+    text-align: right;
+}
+  
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* skill*/
+table.table2 {
+    border: 0px solid;
+    border-collapse: collapse;
+    color: #000;
+}
+
+table.table2 tr {
+    border: 0px solid;
+    border-collapse: collapse;
+    color: #000;
+}
+
+table.table2 td {
+    border: 0px solid;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+}
+
+/*education*/
+table.table1 {
+    border: 1px solid;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+}
+
+table.table1 tr {
+    border: 1px solid;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+}
+
+table.table1 td {
+    border: 1px solid;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    
+}
+
+
